@@ -1,0 +1,101 @@
+ body{
+    background: #3C5377;
+    background:linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    animation: Gradient 15s ease infinite;
+    background-size: 2000% 2000%;
+
+
+    }
+div {margin-left: 5px; margin-top: 5px; margin-right: 5px; margin-bottom: 50px; }
+
+
+#main{
+  margin-left: 40px;
+}
+#theback{
+		poisition: absolute;
+		text-align: center;
+		width: 300px;
+		height:200px;
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+
+    background-image: url(202.jpg);
+	}
+#thefront{
+		position: absolute;
+ 		width: 300px;
+		height:200px;
+		backface-visibility: hidden;
+    background-image: url(203.jpg);
+
+	}
+
+#thecard 	{
+
+  	  	width: 300px;
+        height: 200px;
+   	  	text-align:center;
+  	  	font-size:16px;
+  	  	font-family:sans-serif;
+   	  	float:left;
+  	  	display:inline-block;
+		transform-style: preserve-3d;
+        transition: all 1.5s ease;
+
+	}
+
+#thecard:hover
+	{
+  	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		transform: rotateY(180deg);
+
+	}
+
+/*color changes automatically*/
+
+  @-webkit-keyframes Gradient
+  {
+      0%
+      {
+          background-position: 0% 50%;
+      }
+      50%
+      {
+          background-position: 100% 50%;
+      }
+      100%
+      {
+          background-position: 0% 50%;
+      }
+  }
+  @-moz-keyframes Gradient
+  {
+      0%
+      {
+          background-position: 0% 50%;
+      }
+      50%
+      {
+          background-position: 100% 50%;
+      }
+      100%
+      {
+          background-position: 0% 50%;
+      }
+  }
+  @keyframes Gradient
+  {
+      0%
+      {
+          background-position: 0% 50%;
+      }
+      50%
+      {
+          background-position: 100% 50%;
+      }
+      100%
+      {
+          background-position: 0% 50%;
+      }
+  }

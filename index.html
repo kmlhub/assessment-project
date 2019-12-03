@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style1.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+
+
+    .button {
+        background-color: grey;
+        border: none;
+        color: white;
+        border-radius: 50%;
+        padding: 15px 25px 15px 25px;
+        text-decoration: none;
+        margin-left: 150px;
+        cursor: pointer;
+        font-size: 50px;
+
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+
+  <header class="site-headers">
+    <nav id="fix">
+      <div class='logo'><h1>Gameology</h1></div>
+      <div class='menu'>
+        <ul>
+          <a href="index.html" style="text-decoration:none;   color:white;"><li>Home</li></a>
+          <a href="#service"   style="text-decoration:none;   color:white;">  <li>services</li></a>
+          <a href="about.html" target="_blank" style="text-decoration:none;   color:white;"><li>about us</li></a>
+          <a href="#foot"   style="text-decoration:none;   color:white;"><li>contact us</li></a>
+        </ul>
+
+      </div>
+    </nav>
+  <div id="fix1">
+    <input type="text" id='text_box' placeholder="Search 346,390 games here">
+    <input type="button"  id='myBtn'  value="Search" >
+        <div id='myModal' class='modal'>
+
+            <div class='modal-content' style="background-color:#757575;">
+              <span class='close'>&times;</span>
+            <h1 id='game_name' style=" text-transform: uppercase; text-align:center;"></h1>
+            <div class="leftdiv">
+            <img id='disp' style="margin-left:50px;">
+            </div>
+
+
+          <div class="rightdiv">
+<br>
+          <p> <h3> Release Date:</h3>&nbsp&nbsp <p id="release_date"></p></p>
+          <br>
+            <p id='txt'></p><br>
+            <h3>Description:</h3><p id='descrip'></P><br>
+            <h3>Raw Description:</h3><p id='descrip_raw'></p>
+
+          </div>
+
+
+          </div>
+
+
+  </div>
+    <section>
+      <div class="leftside">
+        <img src="left4.jpg" alt="leftside">
+      </div>
+      <div class="rightside">
+        <h1>Welcome to Our Family</h1>
+        <p> Bored? How about playing?</p>
+        <button type="button" name="button">Sign In/Up</button>
+      </div>
+    </section>
+  </header>
+
+
+
+
+
+  <div id="service" style="position:relative;">
+    <div id="video" style="z-index:-1;">
+          <video autoplay loop muted style="width:100%";>
+              <source id="mp4" src="222.mp4" type="video/mp4"></source>
+                   <p> don't support</p>
+            </video>
+       </div>
+  <div style="height:100%; width:100%; background-color: rgba(0,0,0,0.5); position: absolute; top:0px;">
+  </div>
+  <p style="font-size:50px;position:absolute;top:200px;left:150px;color:#fff;">Upcoming games :
+
+  <input type="button" name="Green" class="button" value="View" onclick="window.location.href = 'upcoming.html'"></input></p>
+  <p style="font-size:50px;position:absolute;top:400px;left:150px;color:#fff;">Trending games&nbsp&nbsp&nbsp :
+
+  <input type="button" name="Green" class="button" value="View" onclick="window.location.href = 'most.html'"></input></p>
+  </div>
+
+
+
+
+
+
+<!-- footer -->
+<div class="footer" id="foot">
+<div class="footer-content">
+    <div class="footer-section about">
+    <h1 class="logo-text"><span>Gameology</span>Hub</h1>
+    <p>
+      Gameology Hub is informative website conceived for the purpose of a info about games.
+    </p><br>
+    <br><br>
+    <div class="contact">
+      <span><i class="fa fa-phone"></i> &nbsp; 8290-3836-97</span>
+      <span><i class="fa fa-envelope"></i> &nbsp;info:Gameology.com</span>
+
+    </div>
+      <div class="socials">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+
+      </div>
+    </div>
+
+    <div class="footer-section links">
+  <h2>Personal Details</h2>
+  <br>
+  Name:    Kamal Saini,&nbspRidam <br>
+  Location:&nbspChitkara University <br>
+  <br>
+  <br><br>
+  <br><br><br>
+  CheckOut My Resume Below: <br>
+
+
+  <a href="resume.html"><input type="button" id="btn-footer" value="RESUME"></a>
+<a href="resume1.html"><input type="button" id="btn-footer" value="RESUME"></a>
+
+
+
+
+
+    </div>
+    <div class="footer-section contact-form">
+      <h2>Contact Us</h2>
+      <br>
+      <form  action="index.html" method="post">
+        <input type="email" id="inp" name="email" class="text-input contact-input" placeholder="Your email address..."><br>
+        <textarea name="message" class="text-input contact-input" placeholder="Your messgae..."></textarea><br>
+        <button type="submit" id="btn-sec"class="btn btn-big">
+          <i class="fa fa-envelope"></i>
+          send
+        </button>
+      </form>
+    </div>
+</div>
+<div class="footer-bottom">
+&copy: Gameology.com  | Designed by Kamal and Ridam
+
+</div>
+
+
+
+
+
+</div>
+<!-- // footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+    btn.addEventListener('click',search)
+ function search() {
+    modal.style.display = "block";
+
+    var url  =  "https://rawg-video-games-database.p.rapidapi.com/games/"
+    var inp  = document.getElementById('text_box')
+    url      =  url + inp.value
+    var xhr  =  new XMLHttpRequest()
+    xhr.open('GET', url)
+    xhr.setRequestHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");
+
+    xhr.setRequestHeader("x-rapidapi-key", "03a46cf14emsh3a919a332ccb1cdp1fc715jsn2509b99d458b");
+
+    xhr.onreadystatechange = test
+
+
+    function test()
+    {
+      if(this.readyState==4 && this.status==200)
+      {
+        var res_data=JSON.parse(this.responseText)
+        console.log(typeof res_data)
+        console.log(res_data)
+        var img_url=res_data.background_image
+        var get_tag=document.getElementById('disp')
+        get_tag.setAttribute('src',img_url)
+
+
+
+    var game_name=document.getElementById('game_name')
+    game_name.innerHTML=res_data.name
+
+
+        var desc = document.getElementById('descrip')
+        desc.innerHTML=res_data.description
+
+
+      var desc_raw = document.getElementById('descrip_raw')
+      desc_raw.innerHTML=res_data.description_raw
+
+
+      var rel_date=document.getElementById('release_date')
+      rel_date.innerHTML=res_data.released
+
+
+      }
+    }
+  xhr.send();
+
+
+
+
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

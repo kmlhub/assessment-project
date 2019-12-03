@@ -1,0 +1,11 @@
+<!Doctype html>
+<html>
+<head><title>Frameset</title>
+</head>
+<frameset rows="10%,90%">
+	<frame src="objective.html" name="frame1">
+	<frameset cols="30%,70%">
+		<frame src="Identity.html" name="frame2">
+		<frame src="Education.html" name="frame3"> 
+</frameset>
+</html>
